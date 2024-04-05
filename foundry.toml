@@ -3,4 +3,11 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+remappings = [
+    "@chainlink/contracts/=D:/Project/blockchain/foundry/smart-lottery-system/lib/chainlink-brownie-contracts/contracts/",
+    "forge-std/=D:/Project/blockchain/foundry/smart-lottery-system/lib/forge-std/src/",
+    "broadcast/=D:/Project/blockchain/foundry/smart-lottery-system/lib/foundry-devops/broadcast/",
+    "@solmate/=D:/Project/blockchain/foundry/smart-lottery-system/lib/solmate/src/",
+    "foundry-devops/=D:/Project/blockchain/foundry/smart-lottery-system/lib/foundry-devops/",
+]
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

@@ -54,7 +54,6 @@ contract Lottery is VRFConsumerBaseV2 {
     }
 
     function enterLottery() external payable {
-        // require(msg.value > i_entranceFee, ""); // takes more gas
         if (msg.value < i_entranceFee) {
             revert Lottery__NotEnoughEthSent();
         }
@@ -118,11 +117,11 @@ contract Lottery is VRFConsumerBaseV2 {
         return s_players[indexOfPlayer];
     }
 
-    function getNumberOfPlayers() external view returns(uint256) {
+    function getNumberOfPlayers() external view returns (uint256) {
         return s_players.length;
     }
 
-    function getWinnerPlayer() external view returns(address) {
+    function getWinnerPlayer() external view returns (address) {
         return s_recentWinner;
     }
 
